@@ -9,6 +9,13 @@ const PORT = 3000;
 app.use(cors());
 app.use(express.json());
 
+app.use(cors({
+  origin: "https://agriculture-water-management.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
+
+
 // Get all states
 app.get('/api/states', async (req, res) => {
   try {
