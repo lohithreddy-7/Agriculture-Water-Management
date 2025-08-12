@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "server": "node server/index.js",
     "setup-db": "mysql -u root -pLohith --port=3006 < server/schema.sql",
-    "start": "node index.js"
+    "start": "node server/index.js"
   },
   "dependencies": {
     "axios": "^1.6.7",
